@@ -1,5 +1,5 @@
 
-public class Carte {
+public class Carte implements Comparable<Carte> {
 	private int valeur;
 	private Famille famille;
 	
@@ -91,5 +91,10 @@ public class Carte {
 			str += new Integer(valeur).toString();
 		}
 		return str + famille.toString();
+	}
+	
+	@Override
+	public int compareTo(Carte c) {
+		return (int) Math.signum((this.valeur - c.valeur));
 	}
 }
