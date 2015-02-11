@@ -6,6 +6,8 @@ public class Carte {
 	public Carte(String code) {
 		char valeur = code.charAt(0);
 		char couleur = code.charAt(1);
+		
+		
 	}
 	
 	
@@ -31,4 +33,6 @@ public class Carte {
 	public void setFamille(Famille famille) {
 		this.famille = famille;
 	}
+	
+	//TODO carte.toString()
 }

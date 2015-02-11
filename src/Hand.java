@@ -20,5 +20,14 @@ public class Hand {
 	public void setMain(Carte[] main) {
 		this.main = main;
 	}
+	
+	public String toString() {
+		String str = "";
+		
+		for(Carte c: main) {
+			str += c.toString();
+		}
+		return str;
+	}
 
 }
