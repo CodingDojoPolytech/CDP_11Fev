@@ -12,6 +12,15 @@ public class Hand {
 	}
 	
 	public Combinaison reconnaitreCombinaison(){
+		int[] tab = new int[15];
+		for(Carte card : main){
+			tab[card.getValeur()]++;
+		}
+		for(int i=2;i<15;i++){
+			if(tab[i]==2){
+				return Combinaison.PAIR;
+			}
+		}
 		return null;
 	}
 	
