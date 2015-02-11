@@ -6,6 +6,25 @@ public class Carte {
 	public Carte(String code) {
 		char valeur = code.charAt(0);
 		char couleur = code.charAt(1);
+		switch(valeur){
+		case 'T':
+			this.valeur = 10;
+			break;
+		case 'J':
+			this.valeur = 11;
+			break;
+		case 'Q':
+			this.valeur = 12;
+			break;
+		case 'K':
+			this.valeur = 13;
+			break;
+		case 'A':
+			this.valeur = 14;
+			break;
+		default : 
+			this.valeur = Integer.parseInt(""+valeur);
+		}
 		
 		
 	}

@@ -10,6 +10,8 @@ public enum Famille {
 		this.str2 = str;
 	}
 	
+	
+	
 	public String toString(){
 		return str2;
 	}
