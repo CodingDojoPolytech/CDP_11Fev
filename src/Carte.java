@@ -3,6 +3,12 @@ public class Carte {
 	private int valeur;
 	private Famille famille;
 	
+	public Carte(String code) {
+		char valeur = code.charAt(0);
+		char couleur = code.charAt(1);
+	}
+	
+	
 	public Carte(int valeur, Famille famille){
 		if(valeur > 14 || valeur < 2)
 			throw new RuntimeException("bad card value");
