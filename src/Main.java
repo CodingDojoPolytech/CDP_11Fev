@@ -3,6 +3,7 @@ public class Main {
 	
 	public static Hand[] decompose(String toAnalyze) {
 		String[] splited = toAnalyze.split(" ");
+		String[] blackHand = null;
 		
 		for(String s: splited) {
 			//if(s.equals("Black:")) 

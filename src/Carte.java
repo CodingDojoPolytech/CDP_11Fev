@@ -26,6 +26,22 @@ public class Carte {
 			this.valeur = Integer.parseInt(""+valeur);
 		}
 		
+		switch(couleur){
+		case 'H':
+			this.famille = Famille.HEART;
+			break;
+		case 'S':
+			this.famille = Famille.SPADE;
+			break;
+		case 'C':
+			this.famille = Famille.CLOVER;
+			break;
+		case 'D':
+			this.famille = Famille.DIAMOND;
+			break;
+
+		}
+		
 		
 	}
 	
