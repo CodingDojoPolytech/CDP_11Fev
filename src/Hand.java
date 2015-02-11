@@ -24,8 +24,11 @@ public class Hand {
 	public String toString() {
 		String str = "";
 		
-		for(Carte c: main) {
-			str += c.toString();
+		for(int i = 0 ; i < 5 ; i++) {
+			str += main[i].toString();
+			if(i != 4) {
+				str += " ";
+			}
 		}
 		return str;
 	}

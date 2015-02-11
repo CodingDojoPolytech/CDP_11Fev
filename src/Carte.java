@@ -34,5 +34,27 @@ public class Carte {
 		this.famille = famille;
 	}
 	
-	//TODO carte.toString()
+	public String toString() {
+		String str ="";
+		switch(valeur) {
+		case 10 :
+			str += "T";
+			break;
+		case 11 :
+			str += "J";
+			break;
+		case 12 :
+			str += "Q";
+			break;
+		case 13 :
+			str += "K";
+			break;
+		case 14 :
+			str += "A";
+			break;
+		default:
+			str += new Integer(valeur).toString();
+		}
+		return str + famille.toString();
+	}
 }
