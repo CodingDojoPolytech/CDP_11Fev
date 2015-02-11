@@ -11,6 +11,10 @@ public class Hand {
 		}
 	}
 	
+	public Combinaison reconnaitreCombinaison(){
+		return null;
+	}
+	
 	
 
 	public Carte[] getMain() {
