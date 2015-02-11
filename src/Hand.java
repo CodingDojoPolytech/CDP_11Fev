@@ -2,6 +2,11 @@
 public class Hand {
 	Carte[] main;
 	
+	public Hand() {
+		main=new Carte[5];
+		
+	}
+	
 	public Hand(String[] str){
 		if (str.length != 5) 
 			throw new RuntimeException("Wrong number of cards");
@@ -9,6 +14,11 @@ public class Hand {
 		for (int i=0; i<5; i++) {
 			main[i] = new Carte(str[i]);
 		}
+	}
+	int i = 0;
+	public void ajouterCarte(Carte c) {
+		main[i] = c;
+		i = (i+1)%5;
 	}
 	
 	public Combinaison reconnaitreCombinaison(){

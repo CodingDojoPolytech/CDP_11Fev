@@ -3,6 +3,8 @@ public class Carte implements Comparable<Carte> {
 	private int valeur;
 	private Famille famille;
 	
+	
+	
 	public Carte(String code) {
 		char valeur = code.charAt(0);
 		char couleur = code.charAt(1);
